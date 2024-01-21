@@ -1,10 +1,10 @@
-package com.practice.ticketapp;
+package com.pluralsight.fundamentals;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class TicketappApplicationTests {
+class FundamentalsApplicationTests {
 
 	@Test
 	void contextLoads() {

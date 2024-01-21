@@ -1,21 +1,17 @@
-package com.practice.ticketapp.model;
+package com.pluralsight.fundamentals.model;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Column;
-import javax.persistence.UniqueConstraint;
+import jakarta.persistence.*;
 
 @Entity
+@Table(name = "app_user")
 public class User {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String firstName;
     private String lastName;
-    @Column(unique = true, nullable = false)
     private String email;
     private String password;
 
@@ -50,4 +46,5 @@ public class User {
     public void setPassword(String password) {
         this.password = password;
     }
+
 }
